@@ -8,13 +8,13 @@ SANAAG_RESTAURANT_WEBSITE/
 │  
 ├── css/  
 │ ├── common.css # Shared styles used across all pages  
-│ └── index.css # Home page styles
-│ └── Menu.css # menu page styles
-│ └── About.css # about page styles
-│ └── Contact.css # contact page styles
+│ ├── index.css # Home page styles  
+│ ├── menu.css # Menu page styles  
+│ ├── about.css # About page styles  
+│ └── contact.css # Contact page styles  
 │  
 ├── about.html # About the restaurant  
-├── contac.html # Contact page (to be corrected to 'contact.html')  
+├── contact.html # Contact page  
 ├── index.html # Home page  
 ├── menu.html # Menu of the restaurant  
 │  
