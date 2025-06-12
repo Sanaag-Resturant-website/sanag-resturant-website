@@ -8,7 +8,10 @@ SANAAG_RESTAURANT_WEBSITE/
 │  
 ├── css/  
 │ ├── common.css # Shared styles used across all pages  
-│ └── style.css # Additional page-specific styles  
+│ └── index.css # Home page styles
+│ └── Menu.css # menu page styles
+│ └── About.css # about page styles
+│ └── Contact.css # contact page styles
 │  
 ├── about.html # About the restaurant  
 ├── contac.html # Contact page (to be corrected to 'contact.html')  
@@ -35,13 +38,6 @@ This is a **team-based project**, and every member will contribute to both desig
 ## ✅ Pages to Implement
 
 - `index.html`: Homepage with welcoming content and featured items
-- `about.html`: Story, mission, and vision of the restaurant
+- `about.html`: Story, mission, and vision of the restaurant , And showcasing cards for the team
 - `menu.html`: List of food and beverages
-- `contact.html`: Contact form and location map (currently named `contac.html`, to be renamed)
-
-## 🎨 Styling
-
-All styles are managed in the `css/` directory:
-
-- `common.css`: Shared components and base styles (colors, fonts, etc.)
-- `style.css`: Page-specific styling as needed
+- `contact.html`: Contact form and location map
