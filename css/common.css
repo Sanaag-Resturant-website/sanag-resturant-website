@@ -80,37 +80,6 @@ footer {
 .logo-description {
   color: #aaa;
 }
-/* Hero section styling */
-.hero {
-  height: 90vh; /* Full screen height minus navbar */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./images/hero-img (2).jpg") center/cover no-repeat; /* Background image with overlay */
-  display: flex;
-  justify-content: center;
-  /* center horizontally */
-  align-items: center;
-  /* center vertically */
-  text-align: center;
-  padding: 16px;
-}
-
-.hero-content {
-  padding-right: 35%;
-  border-radius: 10px;
-  color: white;
-  font-family: "Poppins", serif;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  white-space: nowrap;
-  max-width: 400px;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 
 /* .footer-nav-links {
 } */
