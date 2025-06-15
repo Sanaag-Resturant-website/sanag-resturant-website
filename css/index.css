@@ -1,0 +1,155 @@
+/* Fonts we use = poppins */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+}
+/* Hero section styling */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/hero-img\ \(2\).jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+.hero-content {
+  padding-right: 35%;
+  border-radius: 10px;
+  color: white;
+  font-family: "Poppins", serif;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  margin: 30px 40px;
+}
+.culinary-journey {
+  margin: 60px 0;
+  /* padding: 60px 20px; */
+  background-color: #fff;
+}
+
+.culinary-header h2 {
+  font-size: 32px;
+  color: #e55b11;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.culinary-header p {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.culinary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.culinary-card {
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.28);
+  /* width: 100%; */
+  overflow: hidden;
+  padding-bottom: 20px;
+  /* transition: transform 0.3s ease; */
+}
+
+/* .culinary-card:hover {
+  transform: translateY(-5px);
+} */
+
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 16px;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* our menu section  */
+.home-menu {
+  margin: 90px 0;
+}
+.menu-cards {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #fef9f6;
+  border: 1px solid #e55b11;
+}
+.menu-cards h3 {
+  font-size: 16px;
+  color: #e55b11;
+  margin-bottom: 20px;
+}
+.menu-description p {
+  color: #333;
+}
+.menu-description-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu-description-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu-description-header span {
+  font-weight: 600;
+  color: #e55b11;
+}
+.menu-card-line {
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #333;
+  /* width: 85%; */
+}
+
+/* Media quary */
+
+@media (max-width: 900px) {
+  .culinary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .culinary-grid {
+    grid-template-columns: 1fr;
+  }
+}
