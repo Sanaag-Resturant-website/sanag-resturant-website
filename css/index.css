@@ -140,6 +140,51 @@ body {
   /* width: 85%; */
 }
 
+/* our story section  */
+.our-story-section {
+  margin: 40px 0;
+}
+.our-story-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.story-picture {
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.our-story-description {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.18);
+  margin: 25px 0;
+  /* height: 300px; */
+  border-radius: 10px;
+  padding: 30px;
+}
+.our-story-description h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  color: #e55b11;
+}
+.our-story-sub-despcription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+  gap: 20px;
+}
+.firs-text,
+.second-text {
+  font-size: 18px;
+  color: #333;
+}
+
 /* Media quary */
 
 @media (max-width: 900px) {
@@ -149,7 +194,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  .culinary-grid {
+  .culinary-grid,
+  .our-story-div {
     grid-template-columns: 1fr;
   }
 }
