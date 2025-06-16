@@ -81,6 +81,58 @@ footer {
   color: #aaa;
 }
 
+/* Hero section styling */
+.hero {
+    height: 90vh;/* Full screen height minus navbar */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('./images/hero-img (2).jpg') center/cover no-repeat; /* Background image with overlay */
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    text-align: center;
+    padding: 16px;
+}
+
+.hero-content {
+    padding-right: 35%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', serif;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 500;
+    white-space: nowrap;
+    max-width: 400px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom:1.5rem;
+    
+}
+.btn-container {
+  text-align: left; /* moves the button to the right */
+  margin-bottom: 2.5rem;
+}
+.btn  {
+  background: #f97316;
+  font-weight: 460;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+
 /* .footer-nav-links {
 } */
 .f-navigation {
