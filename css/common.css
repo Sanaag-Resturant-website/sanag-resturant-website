@@ -80,6 +80,7 @@ footer {
 .logo-description {
   color: #aaa;
 }
+
 /* Hero section styling */
 .hero {
     height: 90vh;/* Full screen height minus navbar */
@@ -130,6 +131,8 @@ footer {
   transition: transform 0.3s ease;
 }
 
+
+
 /* .footer-nav-links {
 } */
 .f-navigation {
@@ -171,7 +174,7 @@ footer {
 .footer-line {
   margin: 30px auto 10px;
   border: none;
-  border-top: 1px solid #334155; /* slightly lighter than bg */
+  border-top: 1px solid #334155;
   width: 85%;
 }
 
