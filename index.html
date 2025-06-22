@@ -17,6 +17,7 @@
           <h1>Sanaag Resturant</h1>
         </div>
         <div class="navigation">
+          <i data-lucide="x" class="close-icon"></i>
           <ul class="navigation-items">
             <li class="navigation-lists">
               <a href="index.html" class="navigation-links">Home</a>
@@ -32,11 +33,14 @@
             </li>
           </ul>
         </div>
+        <button class="hamburger" id="hamburger-btn">
+          <i data-lucide="menu" class="menu-icon"></i>
+        </button>
       </nav>
     </header>
 
     <!-- Hero Section Start -->
-    <section class="hero">
+    <div class="hero">
       <div class="hero-content">
         <h1>Welcome to Sanag Restaurant</h1>
         <p>Experience authentic Somali cuisine in the heart of Minnesota</p>
@@ -44,9 +48,9 @@
           <a href="#menu" class="btn">View our Menu</a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <main>
+    <div>
       <div class="container">
         <div class="culinary-journey">
           <div class="culinary-header">
@@ -292,7 +296,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <footer>
       <div class="footer-elements">
@@ -311,30 +315,20 @@
         </div>
 
         <div class="footer-nav-links">
-          <div class="navigation f-navigation">
+          <div class="f-navigation">
             <h2>Quick Links</h2>
-            <ul class="navigation-items f-navigation-items">
-              <li class="navigation-lists f-navigation-lists">
-                <a href="index.html" class="navigation-links f-navigation-links"
-                  >Home</a
-                >
+            <ul class="f-navigation-items">
+              <li class="f-navigation-lists">
+                <a href="index.html" class="f-navigation-links">Home</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a href="about.html" class="navigation-links f-navigation-links"
-                  >About</a
-                >
+              <li class="f-navigation-lists">
+                <a href="about.html" class="f-navigation-links">About</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a href="menu.html" class="navigation-links f-navigation-links"
-                  >Menu</a
-                >
+              <li class="f-navigation-lists">
+                <a href="menu.html" class="f-navigation-links">Menu</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a
-                  href="contact.html"
-                  class="navigation-links f-navigation-links"
-                  >Contact</a
-                >
+              <li class="f-navigation-lists">
+                <a href="contact.html" class="f-navigation-links">Contact</a>
               </li>
             </ul>
           </div>
@@ -362,5 +356,8 @@
     <script>
       lucide.createIcons();
     </script>
+
+    <!-- Our Javascript file -->
+    <script src="script.js"></script>
   </body>
 </html>
