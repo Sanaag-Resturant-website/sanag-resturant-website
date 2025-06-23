@@ -4,54 +4,71 @@
 body {
   font-family: "poppins", sans-serif;
 }
-/* Hero section styling */
+/* Hero Section Styling */
+/* Hero Section Styling */
 .hero {
-  height: 90vh; /* Full screen height minus navbar */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/hero-img\ \(2\).jpg") center/cover no-repeat; /* Background image with overlay */
+  position: relative;
+  height: 100vh;
+  background: url("/images/hero-img (2).jpg") center/cover no-repeat;
   display: flex;
-  justify-content: center;
-  /* center horizontally */
   align-items: center;
-  /* center vertically */
-  text-align: center;
-  padding: 16px;
+  justify-content: flex-start; /* Push content to the left */
+  overflow: hidden;
+  padding: 0 5%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-content {
-  padding-right: 35%;
-  border-radius: 10px;
-  color: white;
-  font-family: "Poppins", serif;
+  text-align: left;
 }
 
 .hero-content h1 {
-  font-size: 60px;
-  font-weight: 500;
-  white-space: nowrap;
-  max-width: 400px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+  color: #f97316;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
-.btn-container {
-  text-align: left; /* moves the button to the right */
-  margin-bottom: 2.5rem;
-}
+
 .btn {
-  background: #f97316;
-  font-weight: 460;
-  color: #fff;
-  border: none;
-  padding: 10px 30px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  background-color: #f97316;
+  color: white;
+  padding: 12px 36px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* .container {
   margin: 30px 40px;
 } */
@@ -273,5 +290,28 @@ body {
   .culinary-grid,
   .our-story-div {
     grid-template-columns: 1fr;
+  }
+  .hero {
+    height: 75vh; /* Smaller height for mobile */
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
   }
 }
