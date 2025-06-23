@@ -12,6 +12,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   z-index: 1000;
 }
 
@@ -152,7 +153,7 @@ footer {
   color: #aaa;
 }
 .social-icon:hover {
-  color: #fff;
+  color: #f97316;
 }
 .footer-line {
   margin: 30px auto 10px;
@@ -192,6 +193,9 @@ footer {
   .navigation.active {
     right: 0;
   }
+  nav {
+    margin: 0;
+  }
 
   .close-icon {
     display: block; /* Show on small screens */
@@ -227,5 +231,8 @@ footer {
   /* Hide the cross in hamburger; now it’s inside menu */
   .hamburger .close-icon {
     display: none;
+  }
+  .social-icon {
+    margin: 0 auto;
   }
 }
