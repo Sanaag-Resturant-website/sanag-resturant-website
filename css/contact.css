@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 body {
-  font-family: "Segoe UI", sans-serif;
+
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fef9f6;
+  background: #fdfdfd;
   color: #333;
 }
 
@@ -18,7 +22,16 @@ h4 {
   margin-bottom: 20px;
   color: #f97316;
 }
-
+ .email, .Address {
+  color: #f97316;
+  margin-right: 10px;
+  width: 25px;
+}
+.Phone {
+  color: #f97316;
+  margin-right: 10px;
+  width: 25px;
+}
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +45,9 @@ h4 {
   min-width: 300px;
   background: #fff;
   padding: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.09);
+
   border-radius: 10px;
 }
 
@@ -76,7 +91,9 @@ h4 {
 
 .map iframe {
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+
 }
 
 /* --- Responsive Design --- */
