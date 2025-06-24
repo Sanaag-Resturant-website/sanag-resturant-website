@@ -21,7 +21,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 
@@ -287,6 +287,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
   .culinary-grid,
   .our-story-div {
     grid-template-columns: 1fr;

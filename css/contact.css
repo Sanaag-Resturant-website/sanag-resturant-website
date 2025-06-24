@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   background: #fef9f6;
@@ -12,7 +12,7 @@ body {
   padding: 30px 20px;
 }
 
- h4 {
+h4 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 20px;
@@ -32,7 +32,7 @@ body {
   min-width: 300px;
   background: #fff;
   padding: 25px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color:#f97316;
+  border-color: #f97316;
 }
 
 .contact-form button {
@@ -76,9 +76,8 @@ body {
 
 .map iframe {
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 /* --- Responsive Design --- */
 @media (max-width: 900px) {
@@ -98,16 +97,16 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
+  /* body {
     padding: 10px;
-  }
+  } */
 
   .contact-page {
     padding: 20px 10px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .contact-form input,
@@ -126,4 +125,3 @@ body {
     height: 250px;
   }
 }
-
