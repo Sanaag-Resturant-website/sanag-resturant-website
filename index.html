@@ -17,6 +17,7 @@
           <h1>Sanaag Resturant</h1>
         </div>
         <div class="navigation">
+          <i data-lucide="x" class="close-icon"></i>
           <ul class="navigation-items">
             <li class="navigation-lists">
               <a href="index.html" class="navigation-links">Home</a>
@@ -32,26 +33,24 @@
             </li>
           </ul>
         </div>
+        <button class="hamburger" id="hamburger-btn">
+          <i data-lucide="menu" class="menu-icon"></i>
+        </button>
       </nav>
-
     </header>
-    <!-- Hero Section Start --> 
-  <section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to Sanag Restaurant</h1>
-    <p>Experience authentic Somali cuisine in the heart of Minnesota</p>
-    <div class="btn-container">
-      <a href="#menu" class="btn">View our Menu</a>
-    </div>
 
-  </div>
-</section>
+    <!-- Hero Section Start -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Welcome to <span class="highlight">Sanag Restaurant</span></h1>
+          <p>Authentic Somali flavors in the heart of Minnesota</p>
+          <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+      </div>
+    </section>
 
-
-
-  </section>
-
-    <main>
+    <div>
       <div class="container">
         <div class="culinary-journey">
           <div class="culinary-header">
@@ -245,8 +244,59 @@
             </div>
           </div>
         </div>
+        <div class="our-story-section">
+          <div class="our-story-div">
+            <div class="story-img-div">
+              <img
+                src="/images/hero-img (2).jpg"
+                class="story-picture"
+                alt="sanaag resturant picture"
+              />
+            </div>
+            <div class="our-story-description">
+              <h2>Our Story</h2>
+              <div class="our-story-sub-despcription">
+                <p class="firs-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam dolor obcaecati deserunt commodi ipsa Lorem ipsum
+                  dolor, sit amet consectetur adipisicing elit. Numquam dolor
+                  obcaecati deserunt commodi ipsa!
+                </p>
+                <p class="second-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam dolor obcaecati deserunt commodi ipsa Lorem ipsum
+                  dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visit-section">
+          <h2 class="visit-title">Visit Us</h2>
+          <p class="visit-subtitle">We'd love to serve you</p>
+
+          <div class="visit-info">
+            <div class="info-card">
+              <i data-lucide="map-pin" class="icon-location"></i>
+              <h3 class="info-title">Location</h3>
+              <p>123 Cedar Ave<br />Minneapolis, MN 55454</p>
+            </div>
+
+            <div class="info-card">
+              <i data-lucide="clock" class="icon-hours"></i>
+              <h3 class="info-title">Hours</h3>
+              <p>Monday - Sunday<br />11:00 AM - 10:00 PM</p>
+            </div>
+
+            <div class="info-card">
+              <i data-lucide="phone" class="icon-contact"></i>
+              <h3 class="info-title">Contact</h3>
+              <p>(612) 555-0123<br />info@sanagrestaurant.com</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
 
     <footer>
       <div class="footer-elements">
@@ -265,30 +315,20 @@
         </div>
 
         <div class="footer-nav-links">
-          <div class="navigation f-navigation">
+          <div class="f-navigation">
             <h2>Quick Links</h2>
-            <ul class="navigation-items f-navigation-items">
-              <li class="navigation-lists f-navigation-lists">
-                <a href="index.html" class="navigation-links f-navigation-links"
-                  >Home</a
-                >
+            <ul class="f-navigation-items">
+              <li class="f-navigation-lists">
+                <a href="index.html" class="f-navigation-links">Home</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a href="about.html" class="navigation-links f-navigation-links"
-                  >About</a
-                >
+              <li class="f-navigation-lists">
+                <a href="about.html" class="f-navigation-links">About</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a href="menu.html" class="navigation-links f-navigation-links"
-                  >Menu</a
-                >
+              <li class="f-navigation-lists">
+                <a href="menu.html" class="f-navigation-links">Menu</a>
               </li>
-              <li class="navigation-lists f-navigation-lists">
-                <a
-                  href="contact.html"
-                  class="navigation-links f-navigation-links"
-                  >Contact</a
-                >
+              <li class="f-navigation-lists">
+                <a href="contact.html" class="f-navigation-links">Contact</a>
               </li>
             </ul>
           </div>
@@ -297,8 +337,14 @@
         <div class="footer-social-meadia-links">
           <h3>Follow Us</h3>
           <div>
-            <i data-lucide="facebook" class="social-icon"></i>
-            <i data-lucide="instagram" class="social-icon"></i>
+            <a href="index.html"
+              ><i data-lucide="facebook" class="social-icon"></i
+            ></a>
+            <a href="index.html"
+              ><i data-lucide="instagram" class="social-icon"></i
+            ></a>
+
+            <!-- <i data-lucide="" class="social-icon"><a href="index.html"></a></i> -->
           </div>
         </div>
       </div>
@@ -316,5 +362,8 @@
     <script>
       lucide.createIcons();
     </script>
+
+    <!-- Our Javascript file -->
+    <script src="script.js"></script>
   </body>
 </html>
