@@ -25,3 +25,9 @@ closeIconInside.addEventListener("click", () => {
 //     hamburgerBtn.style.display = "block";
 //   })
 // );
+fetch(
+  "https://api.spoonacular.com/recipes/716429/information?apiKey=05ce53e37b9d4a9db78c3c404f703825"
+)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Error:", error));

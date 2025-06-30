@@ -1,78 +1,33 @@
 const menuWrapper = document.getElementById("menu-container");
 const loadMoreButton = document.getElementById("loadMoreBtn");
-const foodApiEndpoint = "https://foodish-api.com/api/";
 
-const somaliFoods = [
-  { name: "pizza", description: "Pizza Pezzaria", price: "$12.99" },
-  {
-    name: "Canjeero",
-    description: "Canjeero macaan oo subag leh",
-    price: "$4.00",
-  },
-  {
-    name: "Sambuus",
-    description: "Sambuus la shiilay oo hilib leh",
-    price: "$3.50",
-  },
-  { name: "Baasto", description: "Baasto Somali leh suugo", price: "$10.00" },
-  { name: "Muufo", description: "Muufo  maraq hilib leh", price: "$7.00" },
-  {
-    name: "Sabayad",
-    description: "Rooti Somali subag iyo malab leh",
-    price: "$5.00",
-  },
-  {
-    name: "Buskud",
-    description: "Buskud guriga lagu sameeyey",
-    price: "$3.00",
-  },
-  {
-    name: "Shaah Somali",
-    description: "Shaah Somali oo heyl lehleh",
-    price: "$2.00",
-  },
-  {
-    name: "Hilib Ari",
-    description: "Hilib ari la dubay oo basbaas leh",
-    price: "$15.00",
-  },
-  {
-    name: "Kaluun Duban",
-    description: "Kaluun duban oo leh liin iyo basbaas",
-    price: "$13.00",
-  },
-  {
-    name: "Suqaar",
-    description: "Hilb suqaar la shiilay iyo rooti",
-    price: "$9.00",
-  },
-  { name: "Malawax", description: "Malawax subag leh", price: "$4.50" },
-];
+const spoonacularApiKey = "05ce53e37b9d4a9db78c3c404f703825";
+const spoonacularEndpoint = `https://api.spoonacular.com/recipes/random?apiKey=${spoonacularApiKey}&number=12`;
 
 let allMenuCards = [];
 let cardsDisplayed = 0;
 const cardsPerClick = 6;
 
-function buildMenuCard(imageUrl, index) {
+function buildMenuCard(recipe) {
   const card = document.createElement("div");
   card.className = "foods";
 
-  const food = somaliFoods[index % somaliFoods.length];
-
   const foodImage = document.createElement("img");
-  foodImage.src = imageUrl;
-  foodImage.alt = food.name;
+  foodImage.src = recipe.image;
+  foodImage.alt = recipe.title;
   foodImage.className = "img";
 
   const foodTitle = document.createElement("h3");
-  foodTitle.textContent = food.name;
+  foodTitle.textContent = recipe.title;
 
   const foodDescription = document.createElement("p");
-  foodDescription.textContent = food.description;
+  foodDescription.textContent = recipe.summary
+    ? recipe.summary.replace(/<[^>]*>/g, "").slice(0, 100) + "..."
+    : "No description available.";
 
   const foodPrice = document.createElement("p");
   foodPrice.className = "food-price";
-  foodPrice.textContent = food.price;
+  foodPrice.textContent = "$" + (Math.random() * 20 + 3).toFixed(2); // Fake price
 
   card.appendChild(foodImage);
   card.appendChild(foodTitle);
@@ -101,16 +56,12 @@ function showMenuCards() {
   }
 }
 
-function fetchFoodImages(totalCount = somaliFoods.length) {
-  const apiCalls = Array.from({ length: totalCount }, () =>
-    axios.get(foodApiEndpoint)
-  );
-
-  Promise.all(apiCalls)
-    .then((responses) => {
-      allMenuCards = responses.map((res, idx) =>
-        buildMenuCard(res.data.image, idx)
-      );
+function fetchFoodImages() {
+  axios
+    .get(spoonacularEndpoint)
+    .then((response) => {
+      const recipes = response.data.recipes;
+      allMenuCards = recipes.map((recipe) => buildMenuCard(recipe));
       showMenuCards();
     })
     .catch((error) => {

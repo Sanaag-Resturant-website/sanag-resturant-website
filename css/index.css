@@ -148,7 +148,7 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .menu-cards h3 {
-  font-size: 16px;
+  font-size: 20px;
   color: #e55b11;
   margin-bottom: 20px;
 }
@@ -178,7 +178,7 @@ body {
 
 /* our story section  */
 .our-story-section {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 .our-story-div {
   display: grid;
