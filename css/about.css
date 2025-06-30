@@ -48,7 +48,8 @@ body {
 h1 {
   font-size: 2.6em;
   margin: 10px 0 20px 0;
-  color: #2c3e50; /* Dark blue/grey */
+  color: #f97316;
+  /* color: #2c3e50; Dark blue/grey */
 }
 
 .header-section p {
@@ -156,8 +157,8 @@ h1 {
 }
 
 .social-links img {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   transition: transform 0.3s ease;
   opacity: 0.7;
 }
